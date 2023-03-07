@@ -6,7 +6,7 @@ on:
         branches:
             - master
     schedule:
-        - cron: '20 18 * * *'
+        - cron: '30 18 * * *'
     watch:
         types: 
             - started
@@ -33,7 +33,7 @@ jobs:
 
         steps:
             - name: Checkout codes
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
             
             - name: Install depends
               run: |
